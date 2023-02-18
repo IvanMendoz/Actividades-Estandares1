@@ -154,9 +154,12 @@
                 android:layout_marginTop="10dp"
                 android:ems="10"
                 android:enabled="true"
+                android:fadeScrollbars="true"
                 android:gravity="start|top"
                 android:hint="Datos"
                 android:inputType="textMultiLine"
+                android:scrollbarStyle="insideInset"
+                android:scrollHorizontally="true"
                 android:textColor="#252525"
                 android:textColorHint="#FF939393"
                 tools:enabled="true" />
