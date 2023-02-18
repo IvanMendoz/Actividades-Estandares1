@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DDDDDD"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="375dp"
+        android:layout_height="692dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="377dp"
+            android:layout_height="703dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/txvTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:autoText="false"
+                android:gravity="center|center_vertical"
+                android:text="Datos personales"
+                android:textAlignment="center"
+                android:textColor="#2196F3"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Nombres"
+                android:textColor="#252525"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtNombres"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:hint="Iván Alessandro"
+                android:inputType="textPersonName"
+                android:textColor="#252525"
+                android:textColorHint="#939393"
+                android:textColorLink="#E91E63" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Apellidos"
+                android:textColor="#252525"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtApellidos"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:hint="Mendoza Landaverde"
+                android:inputType="textPersonName"
+                android:textColor="#252525"
+                android:textColorHint="#FF939393" />
+
+            <TextView
+                android:id="@+id/txvSexo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Seleccione su sexo"
+                android:textColor="#252525"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rbMasculino"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Masculino"
+                    android:textColor="#252525"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/rbFemenino"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Femenino"
+                    android:textColor="#252525"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/rbOtros"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Otros"
+                    android:textColor="#252525"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txvPais"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:hint="Seleccione un pais"
+                    android:text="Seleccione pais"
+                    android:textColor="#252525"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </RadioGroup>
+
+            <Spinner
+                android:id="@+id/spnPais"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" />
+
+            <Button
+                android:id="@+id/btnGuardar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#341C60"
+                android:onClick="Almacenar"
+                android:text="Guardar"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/edtMDatos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:enabled="true"
+                android:gravity="start|top"
+                android:hint="Datos"
+                android:inputType="textMultiLine"
+                android:textColor="#252525"
+                android:textColorHint="#FF939393"
+                tools:enabled="true" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
