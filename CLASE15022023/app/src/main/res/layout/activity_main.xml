@@ -22,6 +22,7 @@
             android:layout_height="wrap_content"
             android:background="#6200ED"
             android:gravity="center"
+            android:onClick="pantalla"
             android:text="Activar Metodo" />
 
         <Button
@@ -38,6 +39,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:background="#6200ED"
+            android:onClick="Salir"
             android:text="Salir" />
     </LinearLayout>
 
