@@ -1,0 +1,21 @@
+package com.example.alagranputa;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.widget.EditText;
+import android.widget.TextView;
+
+public class MainActivity extends AppCompatActivity {
+
+    EditText ejem;
+    TextView ejemplo;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        ejemplo = findViewById( R.layout.)
+    }
+}

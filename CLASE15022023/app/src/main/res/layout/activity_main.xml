@@ -41,6 +41,14 @@
             android:background="#6200ED"
             android:onClick="Salir"
             android:text="Salir" />
+
+        <EditText
+            android:id="@+id/edtEjemplo"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
