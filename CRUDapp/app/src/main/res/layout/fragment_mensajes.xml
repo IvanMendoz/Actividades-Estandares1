@@ -1,14 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MensajesFragment">
+    tools:context=".MensajesFragment"
+    android:background="#DFDAED">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_marginTop="45dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <EditText
+            android:id="@+id/edtNombreProveedor"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:ems="10"
+            android:hint="Nombre Proveedor"
+            android:inputType="textPersonName"
+            android:textColor="#252525"
+            android:textColorHint="#6E6E6E" />
+
+        <EditText
+            android:id="@+id/edtTelefonoProveedor"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:ems="10"
+            android:hint="Telefono Proveedor"
+            android:inputType="textPersonName"
+            android:textColor="#252525"
+            android:textColorHint="#7C7C7C" />
+
+        <EditText
+            android:id="@+id/edtCorreoProveedor"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:ems="10"
+            android:hint="Correo Proveedor"
+            android:inputType="textPersonName"
+            android:textColor="#252525"
+            android:textColorHint="#808080" />
+
+        <TextView
+            android:id="@+id/txvMensajeCreacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#252525"
+            android:textSize="16sp"
+            tools:layout_marginBottom="10dp" />
+
+        <Button
+            android:id="@+id/btnGuardarProveedor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar" />
+
+        <Button
+            android:id="@+id/btnActualizarProveedor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Actualizar" />
+
+        <Button
+            android:id="@+id/btnBorrarProveedor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Borrar"
+            app:icon="@drawable/baseline_delete"
+            tools:textAlignment="center" />
+    </LinearLayout>
 
 </FrameLayout>
